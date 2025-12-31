@@ -1,0 +1,15 @@
+.pie_chart_div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  /* border: 2px solid purple; */
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  margin: 10px;
+  min-height: 200px;
+  background-color: rgb(176, 176, 176);
+  border-radius: 15px;
+}

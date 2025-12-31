@@ -1,0 +1,78 @@
+.tran_div
+    {
+        /* border: 2px solid yellow; */
+        width: 95%;
+        margin-top: 20px;
+    }
+
+      .list_bar
+  {
+    /* border: 2px solid rgb(0, 255, 0); */
+    width: 100%;
+    /* background-color: rgb(98, 98, 98); */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 12px;
+  }
+
+  .list_container {
+    flex: 1 1 600px;
+    max-width: 900px;
+    min-width: 280px;
+  }
+
+  .chart_container {
+    flex: 1 1 320px;
+    max-width: 600px;
+    min-width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+  }
+
+    /* ------------Dashboard Styling Starts here------------------- */
+
+      .dash_div > header
+  {
+    color: white;
+    margin: 20px 0px;
+  }
+  .dash_div
+  {
+      /* border: 2px solid red; */
+      width: 95%;
+  }
+
+  .wal_exp_chart_div
+  {
+    /* border: 2px solid green; */
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(98, 98, 98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  /* Large screens: keep Balance, Expense, PieChart in a single row */
+  @media (min-width: 1200px) {
+    .wal_exp_chart_div {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      align-items: stretch;
+      justify-items: stretch;
+      gap: 16px;
+    }
+    .wal_exp_chart_div > * {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+    }
+  }
